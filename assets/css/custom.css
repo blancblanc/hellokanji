@@ -1,0 +1,349 @@
+/*		general		*/
+html, body{
+	height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', arial, sans-serif;
+	color: #24374C;
+}
+
+.table-parent{
+	display: table;
+}
+
+.table-cell{
+	display: table-cell;
+}
+
+
+
+/*		custom		*/
+.show-grid{
+	background: #226699;
+}
+
+.navbar{
+	/*background: url('../img/kanji_pattern_dark.svg');*/
+}
+
+.navbar-brand{
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.answer-card.container{
+	margin-bottom: 100px;
+}
+
+a.panel-link{
+	text-decoration: none;
+	color: inherit;
+}
+
+a > .panel:hover{
+	box-shadow: 0px 2px 6px rgba(0,0,0,.2);
+}
+
+.panel-active{
+	border-color: #39B590;
+}
+
+.panel-inactive{
+	border-color: #8B9CA5;
+}
+
+.panel-new{
+	border-color: #8B9CA5;
+}
+
+.panel-learning{
+	border-color: #24374C;
+}
+
+.panel-review{
+	border-color: #39B590;
+}
+
+.card-header{
+	height: 24px;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.card-title{
+	font-size: 14px;
+	line-height: 24px;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: calc(100% - 24px);
+}
+
+.solo-card .card-title{
+	font-size: 16px;
+}
+
+.question-card .card-title{
+	margin-left: 8px;
+	font-style: italic;
+}
+
+.badge-container{
+	height: 24px;
+	width: 24px;
+	float: right;
+	padding: 0;
+}
+
+.question-card .badge-container{
+	float: left;
+}
+
+.status-badge{
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	font-size: 8px;
+	color: #fff;
+	line-height: 20px;
+	border-radius: 24px;
+	text-align: center;
+	background: #333;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+}
+
+.status-badge.active-badge{
+	background: #39B590;
+	color: #fff;
+}
+
+.status-badge.new-badge{
+	background: #8B9CA5;
+	color: #fff;
+}
+
+.status-badge.new-badge:before{
+	content: '\f1db  \f1db';
+	font-family: fontAwesome;
+}
+
+.status-badge.learning-badge{
+	background: #24374C;
+	color: #fff;
+}
+
+.status-badge.learning-badge:before{
+	content: '\f111  \f1db';
+	font-family: fontAwesome;
+}
+
+.status-badge.review-badge{
+	background: #39B590;
+	color: #fff;
+}
+
+.status-badge.review-badge:before{
+	content: '\f111  \f111';
+	font-family: fontAwesome;
+}
+
+.status-badge.inactive-badge{
+	border-color: #8B9CA5;
+	background: transparent;
+	color: #8B9CA5;
+}
+
+.card-kanji{
+	text-align: center;
+	font-size: 22vw;
+	width: 100%;
+	line-height: 1.25;
+	background: #f5f5f5;
+	border: solid 1px #efefef;
+	border-radius: 4px;
+	margin-bottom: 12px;
+}
+
+.info-label{
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.card-info{
+	font-size: 14px;
+	width: 100%;
+	line-height: 1.25;
+	border: solid 1px #e4e4e4;
+	border-radius: 4px;
+	padding: 8px;
+	margin-bottom: 12px;
+	color: #627283;
+}
+
+.card-info:last-child{
+	margin-bottom: 0px;
+}
+
+.card-info.card-examples ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-info.card-examples li{
+    margin-bottom: 12px;
+}
+
+.card-info.card-examples li:last-child{
+    margin-bottom: 0px;
+}
+
+.keyword{
+	color: #24374C;
+	text-align: center;
+}
+
+.solo-card .keyword{
+	font-size: 18px;
+}
+
+.browse-card .keyword{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 13px;
+}
+
+.card-specs{
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.day-counter{
+	float: left;
+}
+
+.tag-btn{
+	float: right;
+}
+
+.tag-badge{
+	padding: 1px 8px;
+	font-size: 14px;
+	background: #8B9CA5;
+	color: #fff;
+	border: solid 1px #8B9CA5;
+	border-radius: 14px;
+}
+
+.tag-badge:before{
+	content: '\f02b';
+	font-family: fontAwesome;
+	margin-right: 4px;
+}
+
+.tag-active{
+	background: #8B9CA5;
+	color: #fff;
+}
+
+.tag-inactive{
+	background: transparent;
+	color: #8B9CA5;
+}
+
+.srs-progress-bar{
+	margin-bottom: 20px;
+    border-radius: 4px;
+	padding: 0;
+}
+
+.srs-progress-new{
+	background: #8B9CA5;
+	width: 50%;
+	height: 15px;
+}
+
+
+
+/*		media queries		*/
+/*mobile*/
+@media(max-width:767px){
+
+	.function-bar{
+		position: fixed;
+		bottom: 0px;
+	}
+
+}
+
+/*mobile landscape*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+	/* Specifally landscape phones - col-xsl */
+	.card-kanji{
+		font-size: 14vw;
+	}
+
+}
+
+/*tablet*/
+@media(min-width:768px){
+
+	.card-title{
+		font-size: 16px;
+	}
+
+	.card-kanji{
+		font-size: 124px;
+	}
+
+}
+
+/*tablet and down*/
+@media(max-width:767px){
+
+	.menu-push{
+		background: white;
+		position: relative;
+		/*left: -75%;*/
+	}
+
+	#navbar-mobile{
+		height: 100vh;
+		background: #dedede;
+		position: fixed;
+		width: 75vw;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	.navbar-nav{
+		margin: 7.5px 0px;
+	}
+
+}
+
+/*desktop*/
+@media(min-width:992px){
+
+	.card-kanji{
+		font-size: 124px;
+	}
+
+}
+
+/*desktop xl*/
+@media(min-width:1200px){
+	
+	.container{
+		width: 970px;
+	}
+
+}

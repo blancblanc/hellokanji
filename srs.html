@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="Description" name=description>
+    <meta content="Reeder" name=author>
+    <title>Hello Kanji</title>
+    
+    <!--bootstrap CDN-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--custom css if available-->
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <!--adding col between XS and SM-->
+    <link href="assets/css/col-xsl.css" rel="stylesheet">
+
+    <!--web font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--[if lt IE 9]><script src=../assets/js/ie8-responsive-file-warning.js></script><![endif]-->
+    <!--[if lt IE 9]> <script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script> <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script> <![endif]-->
+    
+    <!--icons-->
+    <!--<link href="/apple-touch-icon.png" rel="apple-touch-icon">-->
+    <!--<link href="/favicon.ico" rel="icon">-->
+</head>
+
+<body>
+    <!--bootstrap css test-->
+    <div id="bootstrapCssTest" class="hidden"></div>
+
+    <!--body content-->
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">hello kanji</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="gallery.html">Browse</a></li>
+                    <li><a href="#about">SRS</a></li>
+                    <li><a href="#about">Stats</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi Tim <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="browse.html">Browse</a></li>
+            <li class="active">しょうしゃ</li>
+            <button class="btn btn-primary pull-right btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+        </ol>
+
+        <div class="row">
+
+            <!-- tags, learning -->
+            <div class="col-xs-12 col-xsl-10 col-xsl-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 "> 
+                <div class="solo-card panel panel-learning">
+                    <div class="panel-body">
+                        <div class="card-header">
+                            <div class="title-container">
+                                <div class="card-title"></div>
+                            </div>
+                            <div class="badge-container">
+                                <div class="status-badge learning-badge">
+                                    <!-- <i class="fa fa-minus" aria-hidden="true"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-kanji">
+                            瀟
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="card-specs">
+                            <div class="day-counter">
+                                11 Days
+                            </div>
+                            <div class="tag-btn">
+                                <span class="tag-badge tag-active">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--/col -->
+            
+        </div> <!--/row -->
+    </div> <!-- /container -->
+
+    <!--js-->
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        //if local fallback is available 
+        window.jQuery || document.write('<script src="assets/js/jquery-3.1.1.min.js"><\/script>')
+    </script>
+
+    <!--bootstrap.js and CSS fallback-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        //if local fallback is available
+        window.jQuery.fn.modal || document.write('<script src="assets/bootstrap/js/bootstrap.min.js"><\/script>')
+    </script>
+    <script>
+        (function($) {
+            $(function() {
+                 if ($('#bootstrapCssTest').is(':visible') === true) {
+                    $('head').prepend('<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">');
+                }
+            });
+        })(window.jQuery);
+    </script>
+    
+    <!--anything else-->
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+        $(function() {
+            // on document load shorthand
+        });
+    </script>
+</body>
+
+</html>
